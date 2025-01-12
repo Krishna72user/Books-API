@@ -1,9 +1,10 @@
 from flask import Flask,jsonify,request,render_template
 from flask_sqlalchemy import SQLAlchemy
+import os
 app = Flask(__name__)
 
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///books.db'  # SQLite URI for file-based database
+app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(app.instance_path, 'books.db')}"
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////books.db'  # SQLite URI for file-based database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
