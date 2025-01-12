@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav>div{
+    font-size: 2.7em;
+   font-weight: bold;
+   font-style: oblique;
+   color: rgba(0, 0, 0, 0.982);
+}
+
+main>div{
+    display: flex;
+    flex-direction: column;
+}
+.type{
+    padding-left: 1em;
+}
+.get,.post,.patch,.put,.delete{
+    padding: 0.4em;
+    width: 3.4em;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.one{
+    align-items: center;
+    display: flex;
+}
+.two{
+    padding-left: 2em;
+    padding-top: 0.5em;
+    display: flex;
+    align-items: center;
+}
+.bar{
+    width: 0.3em;
+    height: 1.3em;
+    background-color: rgba(217, 13, 74, 0.634);
+}
+.text{
+    font-weight: bold;
+    padding-left: 1em;
+    color: black;
+    text-decoration: none;
+}
+.get{
+    color: aqua;
+}
+.post{
+    color: rgb(198, 198, 19);
+}
+.put{
+    color: rgb(121, 194, 13);
+}
+.patch{
+    color:bisque;
+}
+.delete{
+    color: rgba(197, 81, 116, 0.707);
+}
+.text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+img{
+    padding-left: 1.4em;
+    opacity: 0;
+}
+img:hover{
+    cursor: pointer;
+    opacity: 1;
+
+}
+.d:hover{
+    text-decoration: none;
+    cursor: default;
+}
+.check{
+    opacity: 0;
+    padding-left: 1em;
+}
+footer{
+    position: absolute;
+    bottom: -2em;
+    font-weight: 700;
+    right: 1em;
+}
